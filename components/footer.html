@@ -1,0 +1,128 @@
+
+<style>
+
+html, body {
+    height: 100%; /* Garanta que a altura do html e do body seja 100% da janela */
+    margin: 0; /* Remova qualquer margem padrão */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1; /* Isso vai fazer o conteúdo principal ocupar o espaço restante */
+}
+    /* ======================================================================
+RODAPÉ
+========================================================================= */
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: #222048;
+    padding: 60px 5% 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;  /* Garante que o footer fique no final */
+}
+
+
+footer .info_footer p.info {
+	font-size: 1rem;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+footer .info_footer p.info span {
+	color: var(--amarelo);
+	margin-left: 10px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+footer .info_footer p.info img {
+	margin-right: 10px;
+    width: 15px;
+    position: relative;
+    bottom: -2px !important;
+}
+
+footer .info_footer p.info a {
+	color: #fff;
+}
+
+footer .info_footer p.info a:hover {
+	color: var(--amarelo);
+}
+
+footer .logo_footer img.logo {
+	width: max-content;
+    max-width: 200px;
+    height: auto;
+    margin: 10px 0;
+}
+
+footer .icones_footer .redes {
+    width: max-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 0 auto;
+}
+
+footer .icones_footer .redes .item {
+    background: #fff;
+    padding: 0px;
+    text-align: center;
+    color: var(--azul);
+    line-height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+footer .icones_footer .redes .item img {
+    width: 20px;
+    margin-top: 10px;
+}
+footer .info_footer p.info a:hover {
+	color: var(--amarelo);
+}
+
+
+</style>
+
+
+<footer>
+    
+    <div class="logo_footer">
+        <!-- Logo do Rodapé -->
+        <a href="#" class="logo">
+            <img src="../components/logo.png" alt="Logo Footer" class="logo" />
+        </a>
+    </div>
+
+    <div class="info_footer">
+        <!-- Informações de contato -->
+        <a class="item">Email: <span>suporte@telecontrol.com.br</span></a>
+        <a class="item"><span>|</span></a>
+        <a class="item">Telefone: <span>+55 (11) 4063-4230</span></a>
+    </div>
+
+
+    <div class="icones_footer">
+        <!-- Ícones de redes sociais -->
+        <div class="redes">
+            <a href="#" class="item"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="item"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="item"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
